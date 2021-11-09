@@ -1,0 +1,53 @@
+<List xmlns:ows="Microsoft SharePoint" Title="Basic List" EnableContentTypes="TRUE" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Basic List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <Fields>
+      <Field Type="TaxonomyFieldType" DisplayName="DemoTaxField" ShowField="Term$Resources:core,Language;" Required="FALSE" EnforceUniqueValues="FALSE" ID="{9d19bf19-9b4c-4e5b-b969-abb7d4cb2b0b}" Name="DemoTaxField">
+        <Default/>
+        <Customization>
+          <ArrayOfProperty>
+            <Property>
+              <Name>SspId</Name>
+              <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">1b65305e-bbcc-4d81-9d96-e4b71cbe2d2d</Value>
+            </Property>
+            <Property>
+              <Name>GroupId</Name>
+            </Property>
+            <Property>
+              <Name>TermSetId</Name>
+              <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">386095d1-c68d-4c6d-b587-48ddaf1aecc9</Value>
+            </Property>
+            <Property>
+              <Name>AnchorId</Name>
+              <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+            </Property>
+          </ArrayOfProperty>
+        </Customization>
+      </Field>
+      <Field Type="Note" DisplayName="DemoTaxField_0" Name="ppbcf61f5528242dfb066f3252f3edda8" ID="{7c256e67-c7cb-4c9f-bc01-8fef641054a0}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE"/>
+      <Field Type="LookupMulti" DisplayName="Taxonomy Catch All Column" StaticName="TaxCatchAll" Name="TaxCatchAll" ID="{001a38fe-8ec2-467d-bf67-a8cf0f0bcf50}" ShowInViewForms="FALSE" Version="3" Mult="TRUE" Sortable="FALSE" AllowDeletion="TRUE" Sealed="TRUE" ColName="int2" RowOrdinal="0"/>
+    </Fields>
+    <Views>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef ID="{9bcf61c5-5282-42df-b066-e3252f3edda9}" Name="DemoTaxField" Required="FALSE" DisplayName="DemoTaxField"/>
+          <FieldRef ID="{7c256e67-c7cb-4c9f-bc01-8fef641054a0}" Name="ppbcf61f5528242dfb066f3252f3edda8" Required="FALSE"/>
+          <FieldRef ID="{001a38fe-8ec2-467d-bf67-a8cf0f0bcf50}" Name="TaxCatchAll" Required="FALSE"/>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID" />
+          </OrderBy>
+        </Query>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

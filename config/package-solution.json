@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-rfp-sitecolumns-client-side-solution",
+    "id": "403C8CA8-134D-411A-A084-28A5D04135D9",
+    "version": "1.0.0.9",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "features": [{
+      "title": "spfx-rfp-sitecolumns-client-side-solution",
+      "description": "spfx-rfp-sitecolumns-client-side-solution",
+      "id": "502CA5CB-475B-48F5-BCAD-EC1E5DE34D97",
+      "version": "1.0.0.9",
+      "assets": {
+        "elementManifests": [
+          "elements.xml"
+        ],
+        "elementFiles":[
+          "schema.xml"
+        ]
+      }
+    }],
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    }
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-rfp-sitecolumns.sppkg"
+  }
+}
